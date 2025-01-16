@@ -7,7 +7,7 @@ import { FormsModule } from '@angular/forms';
   standalone: true,
   imports: [FormsModule],
   templateUrl: './create-clients.component.html',
-  styleUrl: './create-clients.component.css'
+  styleUrl: './create-clients.component.css',
 })
 export class CreateClientsComponent {
   // Creamos un objeto cliente vacío, inicializado según la interfaz
@@ -16,7 +16,6 @@ export class CreateClientsComponent {
     surname: '',
     email: '',
     phone: '',
-    numClient: ''
   };
 
   // Método para manejar el envío del formulario
@@ -34,7 +33,6 @@ export class CreateClientsComponent {
       surname: '',
       email: '',
       phone: '',
-      numClient: ''
     };
   }
 }

@@ -1,6 +1,19 @@
 <nav class="navbar">
-    <ul class="navbar-links">
-      <li><a routerLink="/nueva-cuenta" routerLinkActive="active">Nueva Cuenta</a></li>
-      <li><a routerLink="/consulta-cuenta" routerLinkActive="active">Consulta Cuenta</a></li>
-    </ul>
-  </nav>
+  <ul class="navbar-links">
+    <li>
+      <a [routerLink]="['/crear']" [routerLinkActive]="['enlace-activo']"
+        >Nueva Cuenta</a
+      >
+    </li>
+    <li>
+      <a [routerLink]="['/listar']" [routerLinkActive]="['enlace-activo']"
+        >Consultar Cuenta</a
+      >
+    </li>
+    <li>
+      <a [routerLink]="['/contacto']" [routerLinkActive]="['enlace-activo']"
+        >Contacto</a
+      >
+    </li>
+  </ul>
+</nav>

@@ -1,0 +1,52 @@
+/* Estilos para el footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex; /* Usamos flexbox para que los elementos estén en línea */
+    justify-content: center; /* Centra horizontalmente todo el contenido */
+    align-items: center; /* Centra verticalmente */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben */
+    position: fixed; /* Fija el footer en la parte inferior de la pantalla */
+    bottom: 0; /* Fija el footer en la parte inferior de la pantalla */
+    width: 100%; /* Asegura que el footer ocupe todo el ancho */
+    left: 0; /* Asegura que esté alineado con el borde izquierdo */
+    z-index: 1000; /* Asegura que el footer esté por encima del contenido */
+}
+
+/* Para añadir espacio en la parte inferior del body para que el contenido no quede oculto detrás del footer */
+body {
+    padding-bottom: 50px; /* Ajusta este valor según el alto del footer */
+}
+
+/* Contenedor de los elementos dentro del footer */
+.footer-content {
+    display: flex; /* Establecemos flexbox dentro del contenedor para alinearlos en una fila */
+    justify-content: center; /* Centra los elementos dentro de .footer-content */
+    gap: 20px; /* Espaciado entre los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+    text-align: center; /* Centra el texto */
+}
+
+/* Estilos para los párrafos dentro del footer */
+.footer-content p {
+    margin: 0; /* Elimina márgenes de los párrafos */
+    display: flex; /* Alinea el texto y el enlace en línea */
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+
+/* Estilo para los enlaces en el footer */
+.footer-content a {
+    color: #007bff;
+    text-decoration: none;
+    margin-left: 5px; /* Añade un pequeño espacio entre el texto y el enlace */
+}
+
+/* Estilo para los enlaces al pasar el ratón */
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+  
+  
+  

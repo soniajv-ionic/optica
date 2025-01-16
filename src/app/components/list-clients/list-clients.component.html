@@ -1,0 +1,13 @@
+<div>
+    <div *ngFor="let client of clientService.getClients()">
+        {{client.name}}
+        -
+        {{client.surname}}
+        -
+        {{client.email}}
+        -
+        {{client.phone}}
+        -
+        {{client.numClient}}
+    </div>
+</div>

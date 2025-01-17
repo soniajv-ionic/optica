@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { Client } from '../../interfaces/client';
 import { FormsModule } from '@angular/forms';
+import { JsonPipe } from '@angular/common';
 
 @Component({
   selector: 'app-create-clients',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, JsonPipe],
   templateUrl: './create-clients.component.html',
   styleUrl: './create-clients.component.css',
 })

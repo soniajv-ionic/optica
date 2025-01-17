@@ -6,23 +6,34 @@ import { Client } from '../interfaces/client';
 })
 export class ClientService {
 
-  private clients = new Array<Client>();
+  private listClients = new Array<Client>();
 
-  constructor() { }
-
+  constructor() { 
+    this.listClients.push({
+      name: 'Juan',
+      surname: 'Pérez',
+      email: 'juan@gmail.com',
+      phone: '123456789'
+  })
+  }
+  
   addClient(client : Client) {
-    this.clients.push({...client});//Operador 'spread' o de propagación
-    console.debug(this.clients);
+    this.listClients.push({...client});//Operador 'spread' o de propagación
+    console.debug(this.listClients);
   }
 
   removeClient(client : Client) {
-    let index = this.clients.indexOf(client);
-    this.clients.splice(index, 1);
+    let index = this.listClients.indexOf(client);
+    this.listClients.splice(index, 1);
   }
 
   getClients() : Client[] {
-    return this.clients;
+    return this.listClients;
   }
 
 
 }
+
+function addClient(client: any, Client: any): Client {
+    throw new Error('Function not implemented.');
+  }
